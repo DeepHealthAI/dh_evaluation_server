@@ -181,7 +181,7 @@ if __name__ == '__main__':
         else:
             preprocess_dir = args.preprocess_dir
             if os.path.exists(preprocess_dir):
-                assert os.path.isdir(preprocess_dir) and len(os.listdir(preprocess_dir)) > 0, \
+                assert os.path.isdir(preprocess_dir) and len(os.listdir(preprocess_dir)) == 0, \
                         "Please use a new or empty folder as 'preprocess_dir' parameter"
             else:
                 os.makedirs(preprocess_dir)
